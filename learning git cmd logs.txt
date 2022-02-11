@@ -1,0 +1,635 @@
+mohit@DESKTOP-B11VBBH MINGW64 ~
+$ ls
+'3D Objects'/
+ AndroidStudioProjects/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ DataGripProjects/
+ Desktop/
+ Documents/
+ Downloads/
+ Dropbox/
+ Favorites/
+'Google Drive'/
+ IdeaProjects/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer0001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer0002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PhotoshopPortable/
+ Pictures/
+ Postman/
+ PrintHood@
+ PycharmProjects/
+ Python/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Tracing/
+'Untitled Folder'/
+ Untitled.ipynb
+ Untitled1.ipynb
+ Videos/
+'Visual Studio code'/
+ _netrc
+ anaconda3/
+ eclipse/
+ eclipse-workspace/
+ function.ts
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+mohit@DESKTOP-B11VBBH MINGW64 ~
+$ cd /C/Users/mohit/Documents/Git_testing
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testi
+$ git config --global user.name "mohitleo03"
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testi
+$ git config --global user.email "mohitsmalik2038@gmail.com"
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testi
+$ git clone https://github.com/mohitleo03/learning_github_testin
+Cloning into 'learning_github_testing'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testi
+$ cd learning_github_testing
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testiub_testing (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testiub_testing (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        first.txt
+
+nothing added to commit but untracked files present (use "git ad
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testiub_testing (main)
+$ git add first.txt
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testig/learning_github_testing (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   first.txt
+
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testig/learning_github_testing (main)
+$ git commit -m "my first commit"
+[main a0b6454] my first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 first.txt
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ ls
+README.md  first.txt
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ ls -al
+total 6
+drwxr-xr-x 1 mohit 197609  0 Feb  1 16:17 ./
+drwxr-xr-x 1 mohit 197609  0 Feb  1 16:09 ../
+drwxr-xr-x 1 mohit 197609  0 Feb  1 16:58 .git/
+-rw-r--r-- 1 mohit 197609 25 Feb  1 16:09 README.md
+-rw-r--r-- 1 mohit 197609 20 Feb  1 16:17 first.txt
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$  cd .git
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing/.git (GIT_DIR!)
+$ ls
+COMMIT_EDITMSG  description  info/     packed-refs
+HEAD            hooks/       logs/     refs/
+config          index        objects/
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing/.git (GIT_DIR!)
+$ cd ..
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 298 bytes | 298.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mohitleo03/learning_github_testing.git
+   bda9733..a0b6454  main -> main
+branch 'main' set up to track 'origin/main'.
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ git pull origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 734 bytes | 73.00 KiB/s, done.
+From https://github.com/mohitleo03/learning_github_testing
+ * branch            main       -> FETCH_HEAD
+   a0b6454..56b1313  main       -> origin/main
+Updating a0b6454..56b1313
+Fast-forward
+ remote_changes.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 remote_changes.txt
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ git commit -m "changes"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ git add first.txt
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ git commit -m"changes"
+[main 3cc2974] changes
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mohitleo03/learning_github_testing.git
+   56b1313..3cc2974  main -> main
+branch 'main' set up to track 'origin/main'.
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ git commit -a"more changes"
+[main c8a42a8] ore changes
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 356 bytes | 356.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mohitleo03/learning_github_testing.git
+   3cc2974..c8a42a8  main -> main
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing (main)
+$ cd ..
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing
+$ git init learning_github_testing2
+Initialized empty Git repository in C:/Users/mohit/Documents/Git_testing/learning_github_testing2/.git/
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing
+$ ls
+learning_github_testing/  learning_github_testing2/
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing
+$ cd learning_github_testing2
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new_item1.txt
+        new_item2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git add -A
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   new_item1.txt
+        new file:   new_item2.txt
+
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git remote add origin https://github.com/mohitleo03/learning_github_testing2.git
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/mohitleo03/learning_github_testing2.git'
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   new_item1.txt
+        new file:   new_item2.txt
+
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git commit -m "add files"
+[master (root-commit) 945684e] add files
+ 2 files changed, 2 insertions(+)
+ create mode 100644 new_item1.txt
+ create mode 100644 new_item2.txt
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 270 bytes | 270.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mohitleo03/learning_github_testing2.git
+ * [new branch]      master -> master
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git branch main
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git checkout main
+Switched to branch 'main'
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git checkout -b temp
+Switched to a new branch 'temp'
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (temp)
+$ git checkout main
+Switched to branch 'main'
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/mohitleo03/learning_github_testing2/pull/new/main
+remote:
+To https://github.com/mohitleo03/learning_github_testing2.git
+ * [new branch]      main -> main
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git branch images
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git checkout images
+Switched to branch 'images'
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (images)
+$ git status
+On branch images
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Screenshot (1219).png
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (images)
+$ git add -A
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (images)
+$ git commit -m "upload img"
+[images 6a0577a] upload img
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Screenshot (1219).png
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (images)
+$ git push origin images
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 904.70 KiB | 24.45 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'images' on GitHub by visiting:
+remote:      https://github.com/mohitleo03/learning_github_testing2/pull/new/images
+remote:
+To https://github.com/mohitleo03/learning_github_testing2.git
+ * [new branch]      images -> images
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (images)
+$ git checkout main
+Switched to branch 'main'
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ gil pull origin images
+bash: gil: command not found
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git pull origin images
+From https://github.com/mohitleo03/learning_github_testing2
+ * branch            images     -> FETCH_HEAD
+Updating 945684e..6a0577a
+Fast-forward
+ Screenshot (1219).png | Bin 0 -> 935476 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Screenshot (1219).png
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mohitleo03/learning_github_testing2.git
+   945684e..6a0577a  main -> main
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git add -A
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git commit -m "img from images branch"
+On branch main
+nothing to commit, working tree clean
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Screenshot (1219).png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git add -A
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git commit -m "removed"
+[main 5d8f2a6] removed
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 Screenshot (1219).png
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 263 bytes | 263.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mohitleo03/learning_github_testing2.git
+   6a0577a..5d8f2a6  main -> main
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git pull origin images
+From https://github.com/mohitleo03/learning_github_testing2
+ * branch            images     -> FETCH_HEAD
+Already up to date.
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git checkout main
+Already on 'main'
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git pull origin images
+From https://github.com/mohitleo03/learning_github_testing2
+ * branch            images     -> FETCH_HEAD
+Already up to date.
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git pull origin images
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 208.36 KiB | 599.00 KiB/s, done.
+From https://github.com/mohitleo03/learning_github_testing2
+ * branch            images     -> FETCH_HEAD
+   6a0577a..326f00d  images     -> origin/images
+ Screenshot (1220).png | Bin 0 -> 227048 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Screenshot (1220).png
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git pull origin images
+From https://github.com/mohitleo03/learning_github_testing2
+ * branch            images     -> FETCH_HEAD
+Already up to date.
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git add .
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git commit -m "add img"
+On branch main
+nothing to commit, working tree clean
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 355 bytes | 355.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mohitleo03/learning_github_testing2.git
+   5d8f2a6..4eadc86  main -> main
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git checkout master
+Switched to branch 'master'
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git pull origin images
+From https://github.com/mohitleo03/learning_github_testing2
+ * branch            images     -> FETCH_HEAD
+Updating 945684e..326f00d
+Fast-forward
+ Screenshot (1219).png | Bin 0 -> 935476 bytes
+ Screenshot (1220).png | Bin 0 -> 227048 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Screenshot (1219).png
+ create mode 100644 Screenshot (1220).png
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git add .
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git commit -m "add images"
+On branch master
+nothing to commit, working tree clean
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mohitleo03/learning_github_testing2.git
+   945684e..326f00d  master -> master
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git add .
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git commit -m "back to normal"
+[master 6980bcb] back to normal
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 Screenshot (1219).png
+ delete mode 100644 Screenshot (1220).png
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 268 bytes | 268.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mohitleo03/learning_github_testing2.git
+   326f00d..6980bcb  master -> master
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (master)
+$ git checkout main
+Switched to branch 'main'
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git pull origin main
+From https://github.com/mohitleo03/learning_github_testing2
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git add .
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git commit -m "back to normal"
+[main 72c5940] back to normal
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 Screenshot (1220).png
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 267 bytes | 267.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mohitleo03/learning_github_testing2.git
+   4eadc86..72c5940  main -> main
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git merge images
+Already up to date.
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (main)
+$ git checkout images
+Switched to branch 'images'
+
+mohit@DESKTOP-B11VBBH MINGW64 /C/Users/mohit/Documents/Git_testing/learning_github_testing2 (images)
+$ git merge master
+Updating 6a0577a..6980bcb
+Fast-forward
+ Screenshot (1219).png | Bin 935476 -> 0 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 Screenshot (1219).png
